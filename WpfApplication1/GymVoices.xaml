@@ -1,0 +1,24 @@
+﻿<Window x:Name="mainWindow" x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gym Voices - v0.1" Height="327" Width="424">
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Left">
+        <TextBlock x:Name="TextBlockTitle" Margin="11,5,-146,-17" TextWrapping="Wrap" Text="[Tiempo de Repetición]" VerticalAlignment="Top" FontSize="24" Foreground="#FFA0A029"/>
+        <TextBlock x:Name="TextBlockSubtitle" HorizontalAlignment="Left" Margin="16,92,0,-99" TextWrapping="Wrap" Text="Cada:" VerticalAlignment="Top" FontSize="20" Foreground="#FFA0A029"/>
+        <TextBox x:Name="SecondLeft" HorizontalAlignment="Left" Height="65" Margin="90,75,-24,-120" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="45" Foreground="#FFA0A029" SelectionBrush="#FFA0A029" BorderBrush="#FFA0A029" TextAlignment="Center" FontSize="48" TextChanged="SecondLeft_TextChanged"/>
+        <TextBox x:Name="SecondsRight" HorizontalAlignment="Left" Height="65" Margin="140,75,-74,-120" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="45" Foreground="#FFA0A029" SelectionBrush="#FFA0A029" BorderBrush="#FFA0A029" FontSize="48" TextAlignment="Center"/>
+        <Button x:Name="ButtonUpLeft" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="90,50,-24,-50" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="125" Margin="240,170,-324,-275" VerticalAlignment="Top" Width="175">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="ButtonDownLeft" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="90,144,-24,-144" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White"/>
+        <Button x:Name="ButtonUpRight" Content="+" VerticalAlignment="Top" Margin="140,50,-74,-50" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White" HorizontalAlignment="Left" Width="45"/>
+        <Button x:Name="ButtonDownRight" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="140,144,-74,-144" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White" OpacityMask="Black"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="200,121,-194,-136" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White" OpacityMask="Black" Height="35" FontSize="20"/>
+        <Button x:Name="Play" Content="Iniciar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="20,189,-49,-209" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White" OpacityMask="Black" Height="40" FontSize="20"/>
+        <Button x:Name="Stop" Content="Parar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="20,243,-49,-263" Background="#FFA0A029" BorderBrush="#FFA0A029" Foreground="White" OpacityMask="Black" Height="40" FontSize="20"/>
+        <TextBlock x:Name="TextBlockSeconds" HorizontalAlignment="Left" Margin="201,91,-210,-98" TextWrapping="Wrap" Text="segundos" VerticalAlignment="Top" FontSize="20" Foreground="#FFA0A029" Width="100"/>
+    </Grid>
+</Window>
